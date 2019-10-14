@@ -5,24 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-    
+
+
     <section class='header'>
         <div class="header-background"></div>
-
-        <h1>Análise Musical: Lorde</h2> 
-        <p class="description">
-            Ella Marija Lani Yelich-O'Connor, mais conhecida pelo seu nome artístico <i>"Lorde"</i>, é uma artista neozelandesa nascida em 1996.
-            Com dois álbuns de estúdio, "Pure Heroine" e "Melodrama", lançados em 2013 e 2017 respectivamente, se consolidou com uma das
-            maiores artistas da música pop internacional - mas sobre o que suas composições falam se analisadas computacionalmente?
-            Aqui, utilizaremos Processamento de Linguagem Natural, um conjunto de técnicas da Ciência de Dados para compreender textos, e analisaremos
-            a lexicografia, sentimentos e comportamentos das letras da artista. 
-        </p>
+          <h1>Análise Musical: Lorde</h2>
+          <p class="description">
+              Ella Marija Lani Yelich-O'Connor, mais conhecida pelo seu nome artístico <i>"Lorde"</i>, é uma artista neozelandesa nascida em 1996.
+              Com dois álbuns de estúdio, "Pure Heroine" e "Melodrama", lançados em 2013 e 2017 respectivamente, se consolidou com uma das
+              maiores artistas da música pop internacional - mas sobre o que suas composições falam se analisadas computacionalmente?
+              Aqui, utilizaremos Processamento de Linguagem Natural, um conjunto de técnicas da Ciência de Dados para compreender textos, e analisaremos
+              a lexicografia, sentimentos e comportamentos das letras da artista.
+          </p>
     </section>
+
 
     <section class="contagem-de-palavras">
         <h2>Contagem de Palavras</h2>
@@ -30,7 +31,7 @@
         <p class="description">
             Entre os dois álbuns analisados, Lorde lançou pouco mais de 20 músicas ao todo. Mas quão longas elas são matematicamente?
             Nesta parte, iremos ver quantas palavras compões cada música da artista, e ver quão extensas elas são. Nesta contagem não foram
-            contabilizadas palavras com menos de 3 caracteres, e nem <a target="_blank" href="https://pt.wikipedia.org/wiki/Palavra_vazia">stopwords</a>. 
+            contabilizadas palavras com menos de 3 caracteres, e nem <a target="_blank" href="https://pt.wikipedia.org/wiki/Palavra_vazia">stopwords</a>.
         </p>
 
         <div class='chart-word-count-container'>
@@ -39,42 +40,37 @@
 
         <p class="explanation">
             É possível notar que a maior parte das canções possuem composições de 100 a 160 palavras, com poucas saindo deste intervalo.
-            A canção mais "repetitiva" é <i>Liability(Reprise)</i>, com um total de 34 palavras usadas, enquanto <i>Hard Feelings-Loveless</i> é a mais "diversa", com 
+            A canção mais "repetitiva" é <i>Liability(Reprise)</i>, com um total de 34 palavras usadas, enquanto <i>Hard Feelings-Loveless</i> é a mais "diversa", com
             201 palavras. Ambas as faixas são do álbum "Melodrama", e é discutível essa última ser a mais diversa pois na realidade ela é composta por duas
-            músicas independentes. Por serem apresentadas na mesma faixa do álbum, a mesma foi considerada como uma única faixa. 
+            músicas independentes. Por serem apresentadas na mesma faixa do álbum, a mesma foi considerada como uma única faixa.
         </p>
 
     </section>
-
-
-
 
     <section class="palavras-mais-populares">
             <h2>Palavras mais populares</h2>
 
             <p class="description">
                 Agora que entendemos a distribuição da quantidade de termos usados, temos a pergunta: Quais são as palavras mais usadas por Lorde em suas composições?
-                Para esta pergunta iremos primeiro ver um resumo geral dos dois álbuns analisados, e posteriormente veremos como esses termos se comportam entre os 
-                termos mais usados em cada álbum individualmente. 
+                Para esta pergunta iremos primeiro ver um resumo geral dos dois álbuns analisados, e posteriormente veremos como esses termos se comportam entre os
+                termos mais usados em cada álbum individualmente.
             </p>
 
             <div class='chart-most-popular-words-container'>
                 <canvas id="chart-most-popular-words"></canvas>
             </div>
-    
+
             <p class="explanation">
                 Analisando ambos os álbuns, as palavras "like", "love" e "know" são as mais utilizadas nas músicas da cantora.
                 Mas aqui estamos analisando todas as canções juntas. Quais são as palavras mais usadas nas músicas de <i>Melodrama</i>? E de <i>Pure Heroine</i>?
             </p>
     </section>
 
-
-
     <section class="palavras-mais-populares-individual">
             <h2>Palavras mais populares em cada álbum</h2>
 
             <p class="description">
-                Quão diferentes são os termos mais usados em cada álbum da Lorde? 
+                Quão diferentes são os termos mais usados em cada álbum da Lorde?
             </p>
 
             <div class="chart-most-popular-words-individual-container">
@@ -86,21 +82,20 @@
                     <canvas id="chart-most-popular-words-pureHeroine"></canvas>
                 </div>
             </div>
-    
+
             <p class="explanation">
-                É possível ver que "love" é um termo muito usado nos dois álbuns, mas "like", que é o termo mais usado no geral, nem figura nos mais 
-                usados do Melodrama, fazendo o Pure Heroine ter um grande peso nessa métrica - não somente neste termo, mas em vários outros. 
+                É possível ver que "love" é um termo muito usado nos dois álbuns, mas "like", que é o termo mais usado no geral, nem figura nos mais
+                usados do Melodrama, fazendo o Pure Heroine ter um grande peso nessa métrica - não somente neste termo, mas em vários outros.
                 No Melodrama, "supercut" é um termo muito utilizado, e também é o nome de uma das faixas do álbum.
             </p>
     </section>
-
 
     <section class="TFIDF">
             <h2>Importância com TF-IDF</h2>
 
             <p class="description">
                 Entendemos quais são os termos mais utilizados em cada álbum, mas isso não significa que os termos são <u>necessariamente</u> importantes.
-                Em Ciência de Dados, possuímos uma métrica chamada <a target="_blank" href="https://pt.wikipedia.org/wiki/Tf%E2%80%93idf">TF-IDF</a>, que 
+                Em Ciência de Dados, possuímos uma métrica chamada <a target="_blank" href="https://pt.wikipedia.org/wiki/Tf%E2%80%93idf">TF-IDF</a>, que
                 mede quão importante um termo específico é frente a todos os termos em um corpo de texto.
                 Basicamente, o TF-IDF é um score, e maior o score de um termo, mais significativo para a obra inteira ele é considerado. Quais são os termos
                 mais importantes, de acordo com essa métrica, em cada álbum?
@@ -115,16 +110,15 @@
                     <canvas id="chart-most-popular-words-pureHeroine"></canvas>
                 </div>
             </div> -->
-    
+
             <p class="explanation">
-                É possível ver que "love" é um termo muito usado nos dois álbuns, mas "like", que é o termo mais usado no geral, nem figura nos mais 
-                usados do Melodrama, fazendo o Pure Heroine ter um grande peso nessa métrica - não somente neste termo, mas em vários outros. 
+                É possível ver que "love" é um termo muito usado nos dois álbuns, mas "like", que é o termo mais usado no geral, nem figura nos mais
+                usados do Melodrama, fazendo o Pure Heroine ter um grande peso nessa métrica - não somente neste termo, mas em vários outros.
                 No Melodrama, "supercut" é um termo muito utilizado, e também é o nome de uma das faixas do álbum.
             </p>
     </section>
 
-
-
+  </div>
 
 
 

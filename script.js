@@ -62,6 +62,7 @@ function showWordCount(){
         }]
         },
         options: {
+          aspectRatio: 1,
             title: {
                 display: true,
                 text: "Histograma da contagem de palavras em cada música",
@@ -79,7 +80,7 @@ function showWordCount(){
                     ticks: {
                         max: 3,
                     }
-                }, 
+                },
                 {
                     display: true,
                     ticks: {
@@ -128,6 +129,8 @@ function showMostPopularWords(){
         }]
         },
         options: {
+            responsive: true,
+            aspectRatio: 1,
             title: {
                 display: true,
                 text: "Palavras mais populares",
@@ -186,6 +189,7 @@ function showMostPopularWords_Melodrama(){
         }]
         },
         options: {
+          aspectRatio: 1,
             title: {
                 display: true,
                 text: "Palavras mais populares em Melodrama",
@@ -241,6 +245,7 @@ function showMostPopularWords_pureHeroine(){
         }]
         },
         options: {
+          aspectRatio: 1,
             title: {
                 display: true,
                 text: "Palavras mais populares em Pure Heroine",
