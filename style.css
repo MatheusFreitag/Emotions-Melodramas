@@ -1,0 +1,210 @@
+body{
+    background-color: black;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.header{
+    text-align: center;
+    vertical-align: middle;
+    height: 100vh;
+}
+
+.header-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity : 0.4;
+    z-index: -1;
+    background-image: url('lorde.jpg'); 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header h1{
+    margin: 0;
+    padding-top: 300px;
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.header p.description{
+    padding-top: 100px;
+    color: white;
+    text-align: justify;
+    width: 70%;
+    padding-left: 15%;
+    font-size: 20px;
+}
+
+
+
+.contagem-de-palavras{
+    height: 115vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 37%, rgba(7,5,66,1) 79%, rgba(9,9,121,1) 100%);  
+}
+
+.contagem-de-palavras h2{
+    margin: 0px;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 50px;
+}
+
+.contagem-de-palavras p.description{
+    color: white;
+    text-align: justify;
+    padding-top: 50px;
+    width: 60%;
+    padding-left: 20%;
+    font-size: 18px;
+}
+
+.contagem-de-palavras a{
+    color: white;
+    font-style: italic;
+}
+
+
+.chart-word-count-container{
+    width: 50%;
+    padding-left: 25%;
+    padding-top: 50px;
+    display: block;
+}
+
+.contagem-de-palavras p.explanation{
+    margin-top: 40px;
+    color: white;
+    text-align: justify;
+    padding-top: 50px;
+    width: 60%;
+    padding-left: 20%;
+    font-size: 18px;
+}
+
+.palavras-mais-populares{
+    height: 115vh;
+    background: rgba(9,9,121,1);
+    background: linear-gradient(180deg, rgba(9,9,121,1) 0%, rgba(9,86,121,1) 55%, rgba(9,121,60,1) 98%); 
+}
+
+.palavras-mais-populares h2{
+    margin: 0px;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 50px;
+}
+
+.palavras-mais-populares p.description{
+    color: white;
+    text-align: justify;
+    padding-top: 50px;
+    width: 60%;
+    padding-left: 20%;
+    font-size: 18px;
+}
+
+.chart-most-popular-words-container{
+    width: 50%;
+    padding-left: 25%;
+    padding-top: 50px;
+    display: block;
+}
+
+.palavras-mais-populares p.explanation{
+    margin-top: 40px;
+    color: white;
+    text-align: justify;
+    padding-top: 50px;
+    width: 60%;
+    padding-left: 20%;
+    font-size: 18px;
+}
+
+
+.palavras-mais-populares-individual{
+    height: 100vh;
+    background: rgb(9,121,60);
+    background: linear-gradient(180deg, rgba(9,121,60,1) 0%, rgba(136,142,41,1) 46%, rgba(195,205,28,1) 98%); 
+}
+
+.palavras-mais-populares-individual h2{
+    margin: 0px;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 50px;
+}
+
+.palavras-mais-populares-individual p.description{
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    width: 60%;
+    padding-left: 20%;
+    font-size: 18px;
+}
+
+.chart-most-popular-words-individual-container{
+    width: 90%;
+    padding-left: 5%;
+    display: inline-block;
+}
+.chart-most-popular-words-melodrama-container,
+.chart-most-popular-words-pureHeroine-container{
+    width: 45%;
+    float: left;
+    padding-top: 100px;
+}
+
+.chart-most-popular-words-pureHeroine-container{
+   padding-left: 5%;
+}
+
+.palavras-mais-populares-individual p.explanation{
+    margin-top: 40px;
+    color: white;
+    text-align: justify;
+    padding-top: 50px;
+    width: 60%;
+    padding-left: 20%;
+    font-size: 18px;
+}
+
+
+
+.TFIDF{
+    height: 100vh;
+    background: rgb(195,205,28);
+    background: linear-gradient(180deg, rgba(195,205,28,1) 0%, rgba(224,171,83,1) 20%, rgba(222,160,0,1) 91%); 
+}
+
+.TFIDF h2{
+    margin: 0px;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 50px;
+}
+
+.TFIDF p.description{
+    color: white;
+    text-align: justify;
+    padding-top: 50px;
+    width: 60%;
+    padding-left: 20%;
+    font-size: 18px;
+}
+
+.TFIDF a{
+    color: white;
+    font-style: italic;
+}
