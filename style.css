@@ -9,7 +9,7 @@ body{
 
 .header{
     text-align: center;
-    height: 110%;
+    height: 100vh;
 }
 
 .container-fluid{
@@ -84,8 +84,8 @@ body{
 .chart-word-count-container{
     padding-top: 50px;
     display: block;
-    width: 70%;
-    padding-left: 15%;
+    width: 40%;
+    padding-left: 30%;
 }
 
 .contagem-de-palavras p.explanation{
@@ -124,8 +124,8 @@ body{
 .chart-most-popular-words-container{
     padding-top: 50px;
     display: block;
-    width: 70%;
-    padding-left: 15%;
+    width: 40%;
+    padding-left: 30%;
 }
 
 .palavras-mais-populares p.explanation{
@@ -219,6 +219,34 @@ body{
 
 
 
+.TFIDF p.explanation{
+    color: white;
+    text-align: justify;
+    padding-top: 50px;
+    font-size: 18px;
+    width: 70%;
+    padding-left: 15%;
+}
+
+
+.chart-TFIDF-container{
+    display: inline-block;
+    width: 90%;
+    padding-left: 5%;
+}
+.chart-TFIDF-melodrama-container,
+.chart-TFIDF-pureHeroine-container{
+    float: left;
+    padding-top: 100px;
+    width: 45%;
+}
+
+.chart-TFIDF-pureHeroine-container{
+   padding-left: 5%;
+}
+
+
+
 
 
 @media only screen and (max-device-width: 1024px){
@@ -291,6 +319,13 @@ body{
       font-size: 15px;
       width: 90%;
       padding-left: 5%;
+  }
+
+  .TFIDF p.description,
+  .TFIDF p.explanation{
+    font-size: 15px;
+    width: 90%;
+    padding-left: 5%;
   }
 
 }
